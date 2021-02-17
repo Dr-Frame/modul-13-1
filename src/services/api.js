@@ -20,6 +20,7 @@ const createContact = (name, number) => {
     },
     body: JSON.stringify({ name, number }),
   };
+
   return fetch(
     "https://goit-phonebook-api.herokuapp.com/contacts",
     options
